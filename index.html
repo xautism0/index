@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sito con Emoji Cuore</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: white;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .heart-box {
+            font-size: 250px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .heart-box:hover {
+            transform: scale(1.2);
+        }
+        .message {
+            display: none;
+            font-size: 55px;
+            color: #FF0000;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="heart-box" onclick="showMessage()">❤️</div>
+        <div id="message" class="message"><em><strong>Ti amo gay</strong></em></div>
+    </div>
+
+
+    <script>
+        function showMessage() {
+            var message = document.getElementById('message');
+            message.style.display = message.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
